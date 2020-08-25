@@ -40,11 +40,12 @@ end
 
 def turn(board)
   loop do 
-  puts "Please enter 1-9:"
-  index = gets.to_i
-  if index.between?(0,8)
-    move(board, index)
-    break
+     puts "Please enter 1-9:"
+     index = gets.to_i
+    if index.between?(0,8)
+      move(board, index)
+       break
+    end
   end
 end
 
